@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'events-app',
-  templateUrl: '<h2>Hello World</h2>'
+  templateUrl: 'app.component.html'
 })
 export class EventsAppComponent {
   title = 'app';

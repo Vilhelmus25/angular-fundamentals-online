@@ -12,7 +12,6 @@ import { EventsAppComponent } from './events-app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
   bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
