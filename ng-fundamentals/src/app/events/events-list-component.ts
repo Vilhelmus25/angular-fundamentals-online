@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'events-list-component',
   templateUrl: './events-list-component.html',
-  styleUrls: ['./events-list-component.scss']
 })
 export class EventsListComponent implements OnInit {
 
@@ -18,9 +17,13 @@ export class EventsListComponent implements OnInit {
       address: '1057 DT',
       city: 'London',
       country: 'England'
-    }
+    },
+
   }
 
+  // handleEventClicked(data: any) {
+  //   console.log('received: ', data);
+  // }
 
   constructor() { }
 
