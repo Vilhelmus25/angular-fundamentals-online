@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
 
+
+// !important means, that this will not be overwritten by anything else
 @Component({
     selector: 'event-thumbnail',
     templateUrl: './event-thumbnail.component.html',
@@ -12,6 +14,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 export class EventThumbnailComponent {
     @Input() event: any;
+
+    getStartTimeStyle(): any {
+        if (this.event && this.event.time === '8:00 am')
+            return { color: '#003300', 'font-weight': 'bold' }
+        return {}
+    }
+
+    // getStartTimeClass() {
+    //     if (this.event && this.event.time === '8:00 am')
+    //         return ['green, bold'];
+    //     return [];
+    // }
     // @Output() eventClick = new EventEmitter();
 
     // handleClickMe() {
