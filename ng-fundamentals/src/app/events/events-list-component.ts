@@ -5,7 +5,6 @@ import { ToastrService } from '../common/toastr.service';
 declare let toastr: { success: (arg0: any) => void; };
 
 @Component({
-  selector: 'events-list-component',
   templateUrl: './events-list-component.html',
 })
 export class EventsListComponent implements OnInit {
