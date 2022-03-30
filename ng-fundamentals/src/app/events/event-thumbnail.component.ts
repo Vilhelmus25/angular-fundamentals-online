@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { IEvent } from './shared/index'
 
 
 // !important means, that this will not be overwritten by anything else
@@ -13,7 +14,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
 })
 
 export class EventThumbnailComponent {
-    @Input() event: any;
+    @Input()
+    event!: IEvent;
 
     getStartTimeStyle(): any {
         if (this.event && this.event.time === '8:00 am')
